@@ -2,7 +2,7 @@ import { Dispatch } from "redux";
 
 export const fetchData = () => {
   return (dispatch: Dispatch) => {
-    fetch("https://api.example.com/data")
+    fetch("https://dummyjson.com/test")
       .then((response) => response.json())
       .then((data) => {
         dispatch({ type: "FETCH_DATA_SUCCESS", payload: data });
